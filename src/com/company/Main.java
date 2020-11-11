@@ -31,9 +31,13 @@ public class Main {
 			{
 
 				System.out.println();
-				System.out.println(poc + "/10");
+				System.out.println("You have "+ poc + "/10 tasks");
+				System.out.println("---------------------------------------------------------------------------");
 				System.out.println("1) Manage Tasks");
 				System.out.println("2) Exit");
+				System.out.println("");
+
+				System.out.println("---------------------------------------------------------------------------");
 				int input1 = Integer.parseInt(scan.nextLine());
 
 				if (input1 == 2) {
@@ -48,16 +52,19 @@ public class Main {
 					System.out.println("3) Delete a task");
 					System.out.println("4) Back to main menu");
 					System.out.println("5) Show tasks");
+					System.out.println("---------------------------------------------------------------------------");
 				}
 
 				int input2 = Integer.parseInt(scan.nextLine());
 				if (input2 == 1) {
 					System.out.println("Creating new task");
-					System.out.println("Add position:");
+					System.out.println("Add position 1 - 10:");
+					System.out.println("---------------------------------------------------------------------------");
 					int poz = Integer.parseInt(scan.nextLine());
 					poz--;
 					poc++;
 					System.out.println("Add task:");
+					System.out.println("---------------------------------------------------------------------------");
 					arr[poz] = scan.nextLine();
 				}
 
@@ -65,9 +72,11 @@ public class Main {
 				if (input2 == 2) {
 					System.out.println("updating task:");
 					System.out.println("Choose position");
+					System.out.println("---------------------------------------------------------------------------");
 					int poz = Integer.parseInt(scan.nextLine());
 					poz--;
 					System.out.println("Update task:");
+					System.out.println("---------------------------------------------------------------------------");
 					arr[poz] = scan.nextLine();
 
 
