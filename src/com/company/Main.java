@@ -42,7 +42,7 @@ public class Main {
 
 				if (input1 == 2) {
 					System.exit(input1);
-					System.out.println("why are you gay.");
+					System.out.println("");
 					break;
 				}
 
